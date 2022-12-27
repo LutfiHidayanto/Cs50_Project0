@@ -1,5 +1,16 @@
+body {
+    background-color: rgb(240, 200, 200);
+    font-family: sans-serif, Verdana, Tahoma;
+}
+
 h1 {
     color: red;
     background-color: black;
+    text-align: center;
+}
+
+h2 {
+    color: violet;
+    background-color: aqua;
     text-align: center;
 }
