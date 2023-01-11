@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Images</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Google Images</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="logos">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="img-sm">
+                <img src="g-search-logo.png" alt="Search logo" class="img-sm">
+            </div>
+            <nav>
+                <a class="nav-item text-md" href="index.html">Google Search</a>
+                <a class="nav-item text-md" href="advanced.html" >Google Advanced Search</a>
+            </nav>
+        </header>
+        <main class="search-image-main">
+            <img src="g-image-logo.png" class="img-bg" alt="Google Images logo">
+            <div class="search-container">
+                <form action="https://www.google.com/search" method="get">
+                    <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd" stroke="#808080" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8.5" cy="8.5" r="5" />
+                            <path d="m17.571 17.5-5.571-5.5" />
+                        </g>
+                    </svg>
+                    <input type="text" name="q" placeholder="Search Google or type a URL">
+                    <!-- Buttons -->
+                    <div class="button-container">
+                        <input type="hidden" name="tbm" value="isch" class="button">
+                        <input type="submit" value="Image Search" class="button">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="page-footer">
+           <p class="text-sm">Made by @lutfihid_</p>
+        </footer>
+    </body>
 </html>

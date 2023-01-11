@@ -8,6 +8,50 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logos">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="img-sm">
+            <img src="g-search-logo.png" alt="Search logo" class="img-sm">
+        </div>
+        <nav>
+            <a class="nav-item text-md" href="index.html">Google Search</a>
+            <a class="nav-item text-md" href="images.html">Google Images</a>
+        </nav>
+    </header>
+    <main>
+        <div class="app-bar">
+            <p class="text-bg">Advanced Search</p>
+        </div>
+        <div class="line-divider"></div>
+        <div class="adv-search-container">
+            <p class="text-md">Find pages with...</p>
+            <form action="/search" method="GET" name="f">
+                <div class="adv-form">
+                    <label for="ATW">all these words: </label>
+                    <input id="ATW" type="text" name="as_q">
+                    <span class="instructions">Type the important words: tri-colour rat terrier</span>
+                </div>
+                <div class="adv-form">
+                    <label for="TEWOP">this exact words or phrase: </label>
+                    <input id="TEWOP" type="text" name="as_epq">
+                    <span class="instructions">Put exact words in quotes: "rat terrier"</span>
+                </div>
+                <div class="adv-form">
+                    <label for="AOTW">any of these words: </label>
+                    <input id="AOTW" type="text" name="as_oq">
+                    <span class="instructions">Type OR between all the words you want: miniature OR standard</span>
+                </div>
+                <div class="adv-form">
+                    <label for="ATW">none of these words: </label>
+                    <input id="ATW" type="text" name="as_eq">
+                    <span class="instructions">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
